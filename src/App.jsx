@@ -1,4 +1,9 @@
+import { TVShowAPI } from "./api/tv-show";
+
 import style from "./style.module.css";
+
+TVShowAPI.fetchPopular();
+
 export function App() {
   return (
     <div className={style.main_container}>
