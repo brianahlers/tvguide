@@ -9,15 +9,15 @@
 
 .header {
     flex: 2;
-    background-color: red;
+    border: 1px solid white;
 }
 
 .tv_show_detail {
     flex: 2;
-    background-color: blue;
+    border: 1px solid white;
 }
 
 .recommend_tv_shows {
     flex: 2;
-    background-color: green;
+    border: 1px solid white;
 }
