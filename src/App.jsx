@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { TVShowAPI } from "./api/tv-show";
 import style from "./style.module.css";
+import { TVShowDetail } from "./components/TVShowDetail/TVShowDetail";
 import { BACKDROP_BASE_URL } from "./api/config";
 
 export function App() {
@@ -39,7 +40,9 @@ async function fetchPopular() {
           </div>
         </div>
       </div>
-      <div className={style.tv_show_detail}>SHOW DETAIL</div>
+      <div className={style.tv_show_detail}>
+      { currentTVShow && <TVShowDetail tvShow={currentTVShow} /> }
+      </div>
       <div className={style.recommend_tv_shows}>RECOMMENDED SHOWS</div>
     </div>
   );
