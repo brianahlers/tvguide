@@ -20,6 +20,8 @@ async function fetchPopular() {
 
 
   console.log(currentShow);
+
+  
   return (
     <div className={style.main_container}
     style={{ background: 
